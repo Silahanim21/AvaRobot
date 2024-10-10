@@ -34,42 +34,42 @@
     "API_ID": {
       "description": "ɢᴇᴛ ᴛʜɪs ᴠᴀʟᴜᴇ ғʀᴏᴍ my.telegram.org/apps.",
       "required": true,
-      "value": ""
+      "value": "20584104"
     },
     "API_HASH": {
       "description": "ɢᴇᴛ ᴛʜɪs ᴠᴀʟᴜᴇ ғʀᴏᴍ my.telegram.org/apps.",
       "required": true,
-      "value": ""
+      "value": "f325ee578444d70ad2d02b0673f94d3a"
     },
     "OWNER_ID": {
       "description": "ʏᴏᴜʀ ᴜsᴇʀ ID ᴀs ᴀɴ ɪɴᴛᴇɢᴇʀ.",
       "required": true,
-      "value": "7044783841"
+      "value": "7268753735"
     },
     "DEV_USERS": {
       "description": "ᴅᴇᴠs ᴜsᴇʀ ID ᴀs ᴀɴ ɪɴᴛᴇɢᴇʀ.",
       "required": true,
-      "value": "7044783841"
+      "value": "7268753735"
     },
     "OWNER_USERNAME": {
       "description": "ʏᴏᴜʀ ᴛɢ ᴜsᴇʀɴᴀᴍᴇ",
       "required": true,
-      "value": "JARVIS_V2"
+      "value": "sevimsiz_biri"
     },
     "LOGGER_ID": {
       "description": "ᴇᴠᴇɴᴛ ʟᴏɢs ᴄʜᴀɴɴᴇʟ  ᴛᴏ ɴᴏᴛᴇ ᴅᴏᴡɴ ɪᴍᴘᴏʀᴛᴀɴᴛ ʙᴏᴛ ʟᴇᴠᴇʟ ᴇᴠᴇɴᴛs, ᴇx: '-10023456'",
       "required": true,
-      "value": ""
+      "value": "-1002065943011"
     },
     "MONGO_DB_URI": {
       "description": "ʀᴇǫᴜɪʀᴇᴅ ғᴏʀ ᴅᴀᴛᴀʙᴀsᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴs (ᴍᴏɴɢᴏ).",
       "required": true,
-      "value": ""
+      "value": "mongodb+srv://kurt67143:DLArCT171SF9wRKJ@alexsoza.xpoqv.mongodb.net/?retryWrites=true&w=majority&appName=Alexsoza"
     },
     "TOKEN": {
       "description": "Get bot token from @BotFather on TG",
       "required": true,
-      "value": ""
+      "value": "7348209996:AAGfLIDSzY_rBK_0hs_InbaOkp3D4DqwQ70"
     },
     "DEEP_API": {
       "description": "Your DEEP API key from https://deepai.org/",
