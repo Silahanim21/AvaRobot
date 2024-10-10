@@ -36,23 +36,23 @@ from Ava.modules.language import gs
 
 
 PM_START_TEX = """
-ʜᴇʟʟᴏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙʀᴏ . . . 
+merhaba `{}`, nasılsın \nbekle biraz. . . 
 """
 
-START_IMG = "https://telegra.ph/file/551c987ff6964e408defb.jpg"
-HELP_IMG = "https://telegra.ph/file/e8170cda7390946b750f7.jpg"
+START_IMG = "https://graph.org/file/6ba0dd5938fe68613b3ac.jpg"
+HELP_IMG = "https://graph.org/file/869297aef3b5dd030ea33.jpg"
 
 buttons = [
     [
-        InlineKeyboardButton(text="❣ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ❣︎", url=f"t.me/{BOT_USERNAME}?startgroup=new"),
+        InlineKeyboardButton(text="❣ BENİ EKLE ❣︎", url=f"t.me/{BOT_USERNAME}?startgroup=new"),
     ],
     [
         InlineKeyboardButton(text="ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
-        InlineKeyboardButton(text="🥀 sᴛᴀᴛs 🥀", callback_data="stats_callback"),
+        InlineKeyboardButton(text="🥀 STAT 🥀", callback_data="stats_callback"),
     ],
     [
-        InlineKeyboardButton(text="❄ ᴀʙᴏᴜᴛ ❄", callback_data="Jarvis_"),
-        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="❄ HAKKINDA ❄", callback_data="Jarvis_"),
+        InlineKeyboardButton(text="🥀 SAHİBİ 🥀", url=f"tg://user?id={OWNER_ID}"),
     ],
 ]
 
@@ -178,7 +178,7 @@ def start(update: Update, context: CallbackContext):    # sourcery no-metrics
                 text = f"ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ *{HELPABLE[mod].__mod_name__}* ᴍᴏᴅᴜʟᴇ:\n{help_text}"
                 help_buttons.append(
                     [
-                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back"),
+                        InlineKeyboardButton(text="geri", callback_data="help_back"),
                         InlineKeyboardButton(
                             text="sᴜᴘᴘᴏʀᴛ",
                             callback_data="Jarvis_support",
@@ -216,7 +216,7 @@ def start(update: Update, context: CallbackContext):    # sourcery no-metrics
             time.sleep(1.25)
             lol.edit_text("💻")
             time.sleep(1.0)
-            lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ... ")
+            lol.edit_text("ꜱᴛᴀʀ.. ")
             time.sleep(0.5)
             lol.delete()
             update.effective_message.reply_photo(
@@ -287,8 +287,8 @@ def help_button(update: Update, context: CallbackContext):
             text = f"ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ *{HELPABLE[module].__mod_name__}* ᴍᴏᴅᴜʟᴇ:\n{help_text}"
             help_buttons.append(
                 [
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back"),
-                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="Jarvis_support"),
+                    InlineKeyboardButton(text="geri", callback_data="help_back"),
+                    InlineKeyboardButton(text="destek", callback_data="Jarvis_support"),
                 ]
             )
             query.message.edit_caption(
@@ -367,7 +367,7 @@ def get_help(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="• ᴏᴩᴇɴ ʜᴇʀᴇ •",
+                            text="• link tıkla•",
                             callback_data="help_back",
                         )
                     ],
@@ -469,7 +469,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="ʙᴀᴄᴋ",
+                                text="geri",
                                 callback_data=f"stngs_back({chat_id})",
                             )
                         ]
